@@ -1,0 +1,123 @@
+
+@font-face {
+	font-family: 'TTSquaresCondensed';
+	src: url('../fonts/TTSquaresCondensed/TTSquaresCondensed-Bold.eot');
+	src: local('☺'), url('../fonts/TTSquaresCondensed/TTSquaresCondensed-Bold.woff') format('woff'), url('../fonts/TTSquaresCondensed/TTSquaresCondensed-Bold.ttf') format('truetype'), url('../fonts/TTSquaresCondensed/TTSquaresCondensed-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TTSquaresCondensed';
+	src: url('../fonts/TTSquaresCondensed/TTSquaresCondensed-Regular.eot');
+	src: local('☺'), url('../fonts/TTSquaresCondensed/TTSquaresCondensed-Regular.woff') format('woff'), url('../fonts/TTSquaresCondensed/TTSquaresCondensed-Regular.ttf') format('truetype'), url('../fonts/TTSquaresCondensed/TTSquaresCondensed-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url('../fonts/Inter/Inter-Medium.eot');
+	src: local('☺'), url('../fonts/Inter/Inter-Medium.woff') format('woff'), url('../fonts/Inter/Inter-Medium.ttf') format('truetype'), url('../fonts/Inter/Inter-Medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PexelGrotesk';
+	src: url('../fonts/PexelGrotesk/PexelGrotesk-Regular.eot');
+	src: local('☺'), url('../fonts/PexelGrotesk/PexelGrotesk-Regular.woff') format('woff'), url('../fonts/PexelGrotesk/PexelGrotesk-Regular.ttf') format('truetype'), url('../fonts/PexelGrotesk/PexelGrotesk-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'PingFangTC';
+	src: url('../fonts/PingFangTC/PingFangTC.eot');
+	src: local('☺'), url('../fonts/PingFangTC/PingFangTC.woff') format('woff'), url('../fonts/PingFangTC/PingFangTC-Regular.ttf') format('truetype'), url('../fonts/PingFangTC/PingFangTC.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Digitany';
+	src: url('../fonts/Digitany/Digitany.eot');
+	src: local('☺'), url('../fonts/Digitany/Digitany.woff') format('woff'), url('../fonts/Digitany/Digitany.ttf') format('truetype'), url('../fonts/Digitany/Digitany.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'TTSquaresCondensed', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'PexelGrotesk', sans-serif;
+    font-family: 'PingFangTC', sans-serif;
+    font-size: 16px;
+    line-height: 130%;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+
+    color: #ffffff;
+    min-width: 1440px;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.content{ 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.header{
+    width: 1430px;
+    height: 895px;
+    border-radius: 24px;
+    background-color: #D2FD7E;
+    margin: 0 auto;
+
+    .logo{
+        padding-top: 3px;
+        margin-left: 10px;
+        display: flex;
+        justify-content: space-between;
+        width: 1410px;
+      //  margin: 0 auto;
+    }
+
+    .item{
+        &_img{
+filter: drop-shadow(0px 40px 240px rgba(0, 0, 0, 0.2));
+background: #232323;
+border-radius: 24px;
+
+
+        }
+    }
+}
