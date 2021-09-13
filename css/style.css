@@ -169,6 +169,7 @@ img {
 
 .header .item-img_link {
   display: block;
+  margin-left: 2px;
   border-radius: 24px;
   width: 500px;
   height: 745px;
@@ -396,69 +397,73 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
 }
 
-.header .btns :root {
-  --radio-switch-width: 186px;
-  --radio-switch-height: 46px;
-  --radio-switch-padding: 3px;
-  --radio-switch-radius: 50em;
-  --radio-switch-animation-duration: 0.3s;
+.header .btns-left {
+  margin-left: 5px;
 }
 
-.header .btns .radio-switch {
+.header .btns-left input[type="radio"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.header .btns-left .radio-switch {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: var(--radio-switch-padding);
-  border-radius: var(--radio-switch-radius);
-  border: 1px solid var(--color-contrast-low);
+  padding: 3px;
+  border-radius: 20px;
+  border: 2px solid #000000;
+  background-color: #000000;
+  width: 164px;
+  height: 40px;
 }
 
-.header .btns .radio-switch__item {
-  height: calc(var(--radio-switch-height) - 2*var(--radio-switch-padding));
-  width: calc(var(--radio-switch-width)*0.5 - var(--radio-switch-padding));
+.header .btns-left .radio-switch_item {
+  width: 80px;
+  height: 36px;
   position: relative;
 }
 
-.header .btns .radio-switch__label {
+.header .btns-left .radio-switch_label {
+  position: relative;
+  z-index: 1;
+  margin-top: -8px;
   display: block;
-  line-height: calc(var(--radio-switch-height) - 2*var(--radio-switch-padding));
   text-align: center;
-  border-radius: var(--radio-switch-radius);
+  color: #FFFFFF;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
-.header .btns .radio-switch__marker {
+.header .btns-left .radio-switch_marker {
   position: absolute;
-  top: 0;
-  left: -100%;
-  height: 100%;
-  width: 100%;
-  background-color: var(--color-primary);
-  border-radius: var(--radio-switch-radius);
-  -webkit-transition: -webkit-transform var(--radio-switch-animation-duration);
-  transition: -webkit-transform var(--radio-switch-animation-duration);
-  transition: transform var(--radio-switch-animation-duration);
-  transition: transform var(--radio-switch-animation-duration), -webkit-transform var(--radio-switch-animation-duration);
+  top: -3px;
+  left: -104%;
+  height: 36px;
+  width: 80px;
+  background-color: #D2FD7E;
+  border-radius: 20px;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
 }
 
-.radio-switch__input:checked ~ .header .btns .radio-switch__marker {
+.header .btns-left .radio-switch_input:checked ~ .radio-switch_marker {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
 }
 
-.header .btns .radio-switch:focus-within {
-  -webkit-box-shadow: 0 0 0 3px var(--color-contrast-lower);
-          box-shadow: 0 0 0 3px var(--color-contrast-lower);
-}
-
-.radio-switch__input:focus ~ .header .btns .radio-switch__label {
-  background-color: var(--color-primary), 0.6;
-}
-
-.header .btns .radio-switch__label :not(*):focus-within,
-.radio-switch__input:focus ~ .header .btns .radio-switch__label {
-  background-color: transparent;
+.header .btns-left .radio-switch_input:checked ~ .radio-switch_label {
+  color: #000000;
 }
 
 .header .btns-right {
@@ -470,16 +475,11 @@ img {
           justify-content: space-between;
   width: 260px;
   height: 40px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: center;
 }
 
 .header .btns-right .wallet_btn {
   display: block;
-  background: #D2FD7E;
+  background-color: #D2FD7E;
   border: 1px solid #000000;
   border-radius: 20px;
   color: #000000;
@@ -488,9 +488,12 @@ img {
 
 .header .btns-right .add-mask_btn {
   display: block;
-  background: #000000;
+  background-color: #000000;
   color: #FFFFFF;
   border-radius: 20px;
   padding: 12px 25px 13px;
+  /* &:hover{
+background-color: rgba(0, 0, 0, 0.9);
+                }*/
 }
 /*# sourceMappingURL=style.css.map */
