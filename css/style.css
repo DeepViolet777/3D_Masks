@@ -97,7 +97,7 @@ img {
   height: 895px;
   border-radius: 24px;
   background-color: #D2FD7E;
-  margin: 0 auto;
+  margin: 0 auto 5px;
 }
 
 .header .logo {
@@ -492,8 +492,105 @@ img {
   color: #FFFFFF;
   border-radius: 20px;
   padding: 12px 25px 13px;
-  /* &:hover{
-background-color: rgba(0, 0, 0, 0.9);
-                }*/
+}
+
+.video {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.video-wrapper {
+  width: 1430px;
+  height: 1239px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+  -webkit-column-gap: 2px;
+          column-gap: 2px;
+  row-gap: 2.5px;
+  margin-bottom: 10px;
+}
+
+.video .preview {
+  width: 353px;
+  height: 617px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.video .preview-info {
+  background-color: #151613;
+  border-radius: 4px 4px 24px 24px;
+  width: 353px;
+  height: 107px;
+  position: relative;
+}
+
+.video .preview-title {
+  display: block;
+  font-family: 'PingFangTC', sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  position: absolute;
+  top: 43px;
+  left: 15px;
+}
+
+.video .preview .author-link {
+  position: absolute;
+  top: -44%;
+  left: 10px;
+}
+
+.video .preview .author-name {
+  font-family: 'TTSquaresCondensed', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  color: #6C7479;
+  position: absolute;
+  top: 15px;
+  right: 16px;
+}
+
+.video .preview .price-eth {
+  font-family: 'TTSquaresCondensed', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #D2FD7E;
+  position: absolute;
+  top: 73px;
+  left: 15px;
+}
+
+.video .more-btn {
+  display: block;
+  width: 1430px;
+  height: 70px;
+  text-align: center;
+  padding: 27px 678px;
+  font-family: 'TTSquaresCondensed', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #E1E1E1;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0.41%, #151613), to(#000000));
+  background: linear-gradient(360deg, #151613 0.41%, #000000 100%);
+  border-radius: 24px;
+}
+
+.footer {
+  width: 1430px;
+  height: 84px;
+  text-align: center;
+  font-family: 'PingFangTC', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #555B5F;
+  padding-top: 27px;
 }
 /*# sourceMappingURL=style.css.map */
