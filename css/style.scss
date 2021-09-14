@@ -598,9 +598,8 @@ img {
 
 @media screen and (max-width: 375px) {
 
-
     .content {
-        width: 375px;
+        min-width: 375px;
         height: 2428px;
         margin: 0 auto;
     }
