@@ -67,7 +67,6 @@ body {
   padding: 0;
   background-color: #000000;
   color: #000000;
-  min-width: 1440px;
 }
 
 ul,
@@ -648,7 +647,7 @@ img {
   padding-top: 27px;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
   .content {
     width: 375px;
     height: 2428px;
@@ -737,9 +736,9 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    position: absolute;
-    top: 670px;
-    left: 560px;
+    position: static;
+    margin-top: 115px;
+    margin-left: 20px;
   }
   .header .item-author {
     margin-bottom: 7px;
@@ -773,7 +772,7 @@ img {
     display: none;
   }
   .header .item .bid .time {
-    margin-left: 65px;
+    margin-left: 70px;
     margin-top: -5px;
     width: 150px;
   }
@@ -816,7 +815,7 @@ img {
     width: 164px;
     height: 40px;
     position: static;
-    margin-top: -548px;
+    margin-top: -970px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -942,7 +941,7 @@ img {
     margin-left: 5px;
     border: 1px solid rgba(151, 151, 151, 0.155458);
   }
-  .video .mobile-wrapper {
+  .video .mobile-hidden {
     display: none;
   }
   .footer {

@@ -66,7 +66,6 @@ body {
     padding: 0;
     background-color: #000000;
     color: #000000;
-    min-width: 1440px;
 }
 
 ul,
@@ -85,7 +84,7 @@ img {
 }
 
 .content {
-    min-width: 1440px;
+   min-width: 1440px;
     margin: 0 auto;
 }
 
@@ -597,7 +596,8 @@ img {
 }
 
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
+
 
     .content {
         width: 375px;
@@ -686,9 +686,9 @@ img {
             &-about {
                 display: flex;
                 flex-direction: column;
-                position: absolute;
-                top: 670px;
-                left: 560px;
+                position: static;
+                margin-top: 115px;
+                margin-left: 20px;
             }
 
             &-author {
@@ -727,7 +727,7 @@ img {
                 }
 
                 .time {
-                    margin-left: 65px;
+                    margin-left: 70px;
                     margin-top: -5px;
                     width: 150px;
 
@@ -769,7 +769,7 @@ img {
             width: 164px;
             height: 40px;
             position: static;
-            margin-top: -548px;
+            margin-top: -970px;
             display: flex;
             justify-content: space-between;
 
@@ -901,7 +901,7 @@ img {
             border: 1px solid rgba(151, 151, 151, 0.155458);
         }
 
-        .mobile-wrapper {
+        .mobile-hidden {
             display: none;
         }
     }
