@@ -236,7 +236,7 @@ img {
   content: "";
   width: 14px;
   height: 13px;
-  background-image: url(../img/heart-icon.svg);
+  background-image: url(../img/heart-icon_black.svg);
   opacity: 1;
 }
 
@@ -519,6 +519,7 @@ img {
   height: 617px;
   border-radius: 24px;
   cursor: pointer;
+  font-family: 'TTSquaresCondensed', sans-serif;
 }
 
 .video .preview-info {
@@ -547,7 +548,6 @@ img {
 }
 
 .video .preview .author-name {
-  font-family: 'TTSquaresCondensed', sans-serif;
   font-size: 14px;
   line-height: 16px;
   text-align: right;
@@ -557,14 +557,62 @@ img {
   right: 16px;
 }
 
-.video .preview .price-eth {
-  font-family: 'TTSquaresCondensed', sans-serif;
+.video .preview .price {
   font-size: 14px;
   line-height: 16px;
-  color: #D2FD7E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 105px;
+  height: 16px;
   position: absolute;
   top: 73px;
   left: 15px;
+}
+
+.video .preview .price-eth {
+  color: #D2FD7E;
+}
+
+.video .preview .price-dollars {
+  text-align: right;
+  color: #6C7479;
+}
+
+.video .preview .likes {
+  position: relative;
+  display: block;
+  top: 68px;
+  left: 285px;
+  width: 55px;
+  height: 30px;
+  border-radius: 15px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  background-color: rgba(80, 83, 76, 0.2);
+  mix-blend-mode: normal;
+  color: #6C7479;
+}
+
+.video .preview .likes-number {
+  position: absolute;
+  top: 8px;
+  left: 30px;
+}
+
+.video .preview .likes::before {
+  position: absolute;
+  top: 9px;
+  left: 11px;
+  content: "";
+  width: 14px;
+  height: 13px;
+  background-image: url(../img/heart-icon_grey.svg);
+  opacity: 1;
 }
 
 .video .more-btn {
